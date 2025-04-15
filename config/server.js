@@ -5,6 +5,9 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  server: {
+    allowedHosts: ['strapi.basatmaqsood.com'], // Add your domain here
+  },
   cron: {
     enabled: true,
   },
