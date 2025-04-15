@@ -9,7 +9,9 @@ module.exports = ({ env }) => ({
           secure: true, // Ensure HTTPS URLs
         },
         actionOptions: {
-          upload: {},
+          upload: {
+            resource_type: "auto", // Allows PDFs, images, videos
+          },
           delete: {},
         },
       },

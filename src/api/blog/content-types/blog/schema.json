@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "projects",
+  "collectionName": "blogs",
   "info": {
-    "singularName": "project",
-    "pluralName": "projects",
-    "displayName": "project"
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blog"
   },
   "options": {
     "draftAndPublish": true
