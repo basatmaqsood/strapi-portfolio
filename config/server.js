@@ -1,12 +1,12 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337),
-  url: env('PUBLIC_URL', 'https://strapi.basatmaqsood.com'), // Add this line for the public URL
+  host: env("HOST", "0.0.0.0"),
+  port: env.int("PORT", 1337),
+  url: env("PUBLIC_URL", "https://strapi.basatmaqsood.com"), // Add this line for the public URL
   app: {
-    keys: env.array('APP_KEYS'),
+    keys: env.array("APP_KEYS"),
   },
   server: {
-    allowedHosts: ['strapi.basatmaqsood.com'], // Add your domain here
+    allowedHosts: ["strapi.basatmaqsood.com", "localhost:1337"], // Add your domain here
   },
   cron: {
     enabled: true,
@@ -15,4 +15,5 @@ module.exports = ({ env }) => ({
     enabled: true,
   },
   proxy: true,
+  websocket: false,
 });
